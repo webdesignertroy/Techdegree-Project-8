@@ -14,6 +14,11 @@ body {
 	background: #2d2b30;
 }
 
+fieldset{
+	border: none;
+}
+
+
 /*******************
  Link Styles
 *******************/
@@ -60,7 +65,8 @@ img {
 .nav a {
 	transition: all .5s;
 }
-.nav a:hover {
+.nav a:hover,
+.active {
 	color: white
 }
 header {
@@ -69,6 +75,7 @@ header {
 	text-align: center;
 	justify-content: space-around;
 	background: url('../img/concert02_no_text.jpg') no-repeat top center;
+	background-color: #f2f2f2;
 	background-size: cover;
 	overflow: hidden;
 	padding-top: 60px;
@@ -77,16 +84,17 @@ header {
 #titles {
 	align-items: center;
 }
-header h1 {
+.title {
 	color: #333;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 5px rgba(255, 255, 255 , 0.7);
 	font-size: 3.4em;
 }
-header h2 {
+.subtitle {
 	color: #781125;
 	text-shadow: 1px 1px 2px rgba(255, 255, 255 , 0.7);
 	font-size: 1.8em;
+	text-transform: lowercase;
 }
 .tag {
 	color: black;
@@ -132,6 +140,9 @@ header .name {
 	color: #F83b55;
 	margin-top: 10px;
 }
+h1.heading {
+	font-weight: normal;
+}
 .initial-spacing {
 	margin-top: 35px ;
 }
@@ -166,12 +177,15 @@ a.social {
 	transition: all .5s;
 }
 a.twitter {
+	text-indent: -2000px;
 	background-image: url(../img/twitter-32.png);
 }
 a.youtube {
+	text-indent: -2000px;
 	background-image: url(../img/youtube-32.png);
 }
 a.spotify {
+	text-indent: -2000px;
 	background-image: url(../img/spotify-32.png);
 }
 a.social:hover {
