@@ -16,6 +16,10 @@ body {
 fieldset {
 	border: none;
 }
+label,
+legend {
+	color: #02eabb;
+}
 /*******************
  Link Styles
 *******************/
